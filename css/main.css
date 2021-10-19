@@ -1,0 +1,373 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+header {
+    background: url();
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 60px 0 70px 0;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #E8A908;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.container_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-li {
+    display: inline-block;
+}
+
+.nav-li:not(:last-of-type) {
+    margin-right: 94px;
+}
+
+.menu {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    text-decoration: none;
+}
+
+.menu:hover {
+    color: #E8A908;
+}
+
+.menu:active {
+    color: #E8A908;
+}
+
+.offer-wrapper {
+    background: url(../img/title.png) no-repeat;
+    padding: 80px 0 160px 0;
+    text-align: center;
+}
+
+.offer {
+}
+
+.offer__minititle {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #F7F7F7;
+}
+
+.offer_text {
+    color: #F7F7F7;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.button {
+    padding: 16px 60px;
+    background: #E8A908;
+    color: #FFFFFF;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    width: 236px;
+    transition: all 0.5s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 65px;
+    outline: none;
+}
+
+.button:hover {
+    background: #bd7304;
+    box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+}
+
+.btn {
+    padding: 16px 60px;
+    background: none;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    width: 236px;
+    transition: all 0.5s ease;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover, .btn-order:hover {
+    color: #E8A908;
+    border: 2px solid #E8A908;
+    box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+}
+
+.order {
+    background: url(../img/2.png) no-repeat;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 80px 0 160px 0;
+    margin-bottom: 80px;
+}
+
+.order-title {
+    color: #FFFFFF;
+}
+
+.order-text {
+    margin: 10px 0 60px 0;
+}
+
+.btn-order {
+    padding: 16px 60px;
+    background: none;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    width: 245px;
+    transition: all 0.5s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mobile-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.login-title {
+    max-width: 565px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.login-text {
+    max-width: 500px;
+}
+
+.mobile-shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 110px;
+    margin-bottom: 190px;
+}
+
+.shop-title {
+    max-width: 565px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.shop-text {
+    max-width: 500px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* RESPONSIVE */
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .nav-li:not(:last-of-type) {
+        margin-right: 70px;
+    }
+    h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .login-title, .login-text  {
+        width: 350px;
+    }
+    .shop-title, .shop-text {
+        width: 370px;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .nav-li:not(:last-of-type) {
+        margin-right: 50px;
+    }
+    h1 {
+        font-size: 48px;
+        line-height: 70px;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .nav-li:not(:last-of-type) {
+        margin-right: 20px;
+    }
+    .button {
+        margin-right: 20px;
+    }
+    .mobile-login {
+        display: block;
+    }
+    .mobile-shop {
+        display: block;
+        margin-bottom: 120px;
+    }
+    .mobile-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+    }
+    .mobile-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+    }
+    .mobile-text, .mobile-shop {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .login-title, .login-text, .shop-title, .shop-text  {
+        width: auto;
+    }
+    .footer-text {
+        font-size: 16px;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+    }
+    .container_flex {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .nav-li:not(:last-of-type) {
+        margin-right: 5px;
+    }
+    ul {
+        padding-left: 0;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 40px;
+    }
+    .offer_text {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .offer-wrapper {
+        padding: 50px 0 60px 0;
+    }
+    .button {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .mobile-login {
+        margin-top: 40px;
+    }
+    .mobile-img {
+        margin-bottom: 40px;
+    }
+    .mobile-shop {
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+    .mobile-image {
+        margin-top: 40px;
+    }
+    .order {
+        padding: 50px 0 60px 0;
+        margin-bottom: 20px;
+    }
+    .footer {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-text {
+        font-size: 12px;
+    }
+}
